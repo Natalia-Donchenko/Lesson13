@@ -8,13 +8,20 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link media="screen" rel="stylesheet" href="css/tablet.css">
+  <link media="screen" rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
 
   <header>
     <div class="wrapper header__wrapper">
       <div class="container header__container">
-        <a href="#"><img src="img/header/header_logo.svg" alt="logo"></a>
+        <div class="header__logo-primary">
+          <a href="#"><img class="header__logo" src="img/header/header_logo.svg" alt="logo"></a>
+        </div>
+        <div class="header__burger">
+          <a href="#"><img src="img/header/burger.png" alt="menu"></a>
+        </div>
         <div class="header__items">
           <nav>
             <ul class="header__menu">
@@ -164,27 +171,33 @@
           <div class="boost__items-img">
             <img src="img/main/boost/managers.png" alt="managers">
           </div>
-          <h3>Managers</h3>
-          <p>Update existing and launch new features and products while simultaneously localizing them in multiple languages. Streamline your team's workflow, maximize productivity, and speed up expansion to other markets.</p>
-          <a href="#">Learn more</a>
+          <div class="boost__items-text">
+            <h3>Managers</h3>
+            <p>Update existing and launch new features and products while simultaneously localizing them in multiple languages. Streamline your team's workflow, maximize productivity, and speed up expansion to other markets.</p>
+            <a href="#">Learn more</a>
+          </div>
         </div>
 
-        <div class="boost__items">
+        <div class="boost__items boost__items-reverse">
           <div class="boost__items-img">
             <img src="img/main/boost/developers.png" alt="developers">
           </div>
-          <h3>Developers</h3>
-          <p>Set up an integration with your code repository or your own custom SDK via Lokalise's powerful API. Do that once, and every time you make changes in the code, they'll be automatically imported to Lokalise for translation.</p>
-          <a href="#">Learn more</a>
+          <div class="boost__items-text">
+            <h3>Developers</h3>
+            <p>Set up an integration with your code repository or your own custom SDK via Lokalise's powerful API. Do that once, and every time you make changes in the code, they'll be automatically imported to Lokalise for translation.</p>
+            <a href="#">Learn more</a>
+          </div>
         </div>
 
         <div class="boost__items">
           <div class="boost__items-img">
             <img src="img/main/boost/translators.png" alt="managers">
           </div>
-          <h3>Translators</h3>
-          <p>Eliminate double-work and neverending revisions with visual context (screenshots) and live previews. Improve the quality and speed of your translations with built-in CAT tools, like autocomplete, inline machine translation, and translation memory.</p>
-          <a href="#">Learn more</a>
+          <div class="boost__items-text">
+            <h3>Translators</h3>
+            <p>Eliminate double-work and neverending revisions with visual context (screenshots) and live previews. Improve the quality and speed of your translations with built-in CAT tools, like autocomplete, inline machine translation, and translation memory.</p>
+            <a href="#">Learn more</a>
+          </div>
         </div>
       </div>
     </section>
@@ -212,13 +225,17 @@
         </div>
         <div class="software__logo">
           <div class="software__logo-stars">
-            <a href="#"><img src="img/main/software/logo_one.svg" alt="logo"></a>
-            <img src="img/main/software/stars.svg" alt="stars">
+            <a href="#"><img src="img/main/software/logo-one.svg" alt="logo"></a>
+            <div class="stars">
+              <img src="img/main/software/stars.svg" alt="stars">
+            </div>
             <p>Users love us</p>
           </div>
           <div class="software__logo-stars">
             <a href="#"><img src="img/main/software/logo-two.svg" alt="logo"></a>
-            <img src="img/main/software/stars.svg" alt="stars">
+            <div class="stars">
+              <img src="img/main/software/stars.svg" alt="stars">
+            </div>
             <p>Highest rated</p>
           </div>
         </div>
@@ -227,8 +244,12 @@
 
     <section class="wrapper integrate">
       <div class="container integrate__container">
-        <h2>Integrate Lokalise with your work tools</h2>
-        <p>Automate processes, eliminate routine tasks, and track progress with ease.</p>
+        <div class="integrate__text-primary">
+          <h2>Integrate Lokalise with your work tools</h2>
+        </div>
+        <div class="integrate__text-secondary">
+          <p>Automate processes, eliminate routine tasks, and track progress with ease.</p>
+        </div>
         <div class="integrate__container-img">
           <img src="img/main/main_integrate.jpg" alt="integrate">
         </div>
@@ -263,7 +284,7 @@
 
           <div class="footer-menu__list">
             <ul>
-              <li><a class="footer-menu__list-items" href="#">Product</a>
+              <li class="footer-menu__list-items"><a href="#">Product</a>
                 <ul class="footer-menu__list-links">
                   <li><a href="#">For developers</a></li>
                   <li><a href="#">For managers</a></li>
@@ -275,7 +296,7 @@
                   <li><a href="#">Automations</a></li>
                 </ul>
               </li>
-              <li><a class="footer-menu__list-items" href="#">Support</a>
+              <li class="footer-menu__list-items"><a href="#">Support</a>
                 <ul class="footer-menu__list-links">
                   <li><a href="#">Contact</a></li>
                   <li><a href="#">Documentation</a></li>
@@ -287,7 +308,7 @@
                   <li><a href="#">Supported File Formats</a></li>
                 </ul>
               </li>
-              <li><a class="footer-menu__list-items" href="#">Company</a>
+              <li class="footer-menu__list-items"><a href="#">Company</a>
                 <ul class="footer-menu__list-links">
                   <li><a href="#">About</a></li>
                   <li><a href="#">Blog</a></li>
@@ -296,7 +317,7 @@
                   <li><a href="#">Media Kit</a></li>
                 </ul>
               </li>
-              <li><a class="footer-menu__list-items" href="#">Legal</a>
+              <li class="footer-menu__list-items"><a href="#">Legal</a>
                 <ul class="footer-menu__list-links">
                   <li><a href="#">Terms of Service</a></li>
                   <li><a href="#">Privacy Policy</a></li>
