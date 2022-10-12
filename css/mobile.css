@@ -23,17 +23,20 @@
   }
 
    /* logos */
-   .logos__logo {
+  .logos__logo {
     display: flex;
     flex-direction: column;
-   }
+  }
 
    /* lokalise */
-   .lokalize__container {
-    display: flex;
+  .lokalize__container {
     padding: 0.5rem;
+  }
+
+  .lokalize__items {
+    display: flex;
     flex-direction: column;
-   }
+  }
 
    /* boost */
    .boost__items-img {

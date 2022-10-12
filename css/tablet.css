@@ -83,15 +83,18 @@
 
   /* lokalise */
   .lokalize__container {
+    padding: 3rem 1.5rem;
+  }
+
+  .lokalize__items {
     grid-template: max-content repeat(3, 1fr) / repeat(2, 1fr);
-    padding: 3rem 0;
     grid-gap: 1rem 1.4rem;
   }
 
-  .lokalize__title {
+  .lokalize__items-title {
     grid-column: 1 / 3;
     text-align: center;
-  } 
+  }
 
   /* boost */
   .boost__container {
